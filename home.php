@@ -1,7 +1,3 @@
-<?php
-    include "header.php"
-?>
-
 <main>
 <div section="section-about-us ">
         <div class="about-us">
@@ -179,22 +175,41 @@
             <div class="contact-us--flex">
                 <div class="contact-us--form">
                     <h4><span>< </span>CONTACT US<span> /></span></h4>
+                    <?php
+                    if(isset($_GET['error'])){
+                        if($_GET['error'] == "emptyfields"){
+                            echo '<p class="error-message">Fill Out The Empty Fields</p>';
+                        }
+                        else if($_GET['error'] == "invalidmail"){
+                            echo '<p class="error-message">Invalid Email Address</p>';
+                        }                        
+                        else{
+                            echo '<p class="error-message">Please, Try Again Later</p>';
+                        }                                           
+                    }
+                    else if(isset($_GET['submit'])) {
+                        if($_GET['submit'] == "success"){
+                            echo '<p class="submit--success">Submitted Successfully</p>';
+                        }
+                        
+                    }
+                    ?>
 
 
-                    <form>
+                    <form action="includes/contactus.inc.php" method="post">
                         <label>Your Name<span> *</span></label>
-                        <input type="text">
+                        <input type="text" name="fullname">
 
                         <label>Email Address<span> *</span></label>
-                        <input type="email">
+                        <input type="email" name="email">
 
                         <label>Subject<span> *</span></label>
-                        <input type="text">
+                        <input type="text" name="subject">
 
                         <label>Message<span> *</span></label>
-                        <textarea></textarea>
+                        <textarea name="message"></textarea>
 
-                        <input type="submit" value="SUBMIT">
+                        <input type="submit" name="contact-submit" value="SUBMIT">
                     </form>
                 </div>
 
@@ -326,6 +341,3 @@
     
 </main>
 
-<?php
-    include "footer.php"
-?>

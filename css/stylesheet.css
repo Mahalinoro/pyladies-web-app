@@ -1038,3 +1038,21 @@ color: rgb(239, 40, 88);
     color: rgb(239, 40, 88);
     text-decoration: none;    
 }
+
+.error-field{
+    color:red;
+}
+
+.signup--success{
+    color:green;
+}
+
+.error-message{
+    color: red;
+    text-align: center;
+}
+
+.submit--success{
+    color:green;
+    text-align: center;
+}

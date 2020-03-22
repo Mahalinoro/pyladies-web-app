@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +31,7 @@
                     <div class="header--navbar--logo ">
                         <ul>
                             <li><img src="assets/icons/pyladies-logo.png "></li>
-                            <li><a href="home.php">Pyladies Antananarivo</a></li>
+                            <li><a href="index.php">Pyladies Antananarivo</a></li>
                         </ul>
                     </div>
 
@@ -42,11 +46,22 @@
                     </div>
 
                     <div class="header--navbar--authentification ">
-                        <ul>
-                            <li><a href="login.php">LOG IN</a></li>
-                            <li>
-                                <a class="button--signup " href="signup.php">BECOME A MEMBER</a></li>
-                        </ul>
+                        <?php
+                        if(isset($_SESSION['userid'])){ 
+                            echo '<ul>';
+                            echo '<li><a href="#">'.$_SESSION['username'].'</a></li>';
+                            echo'<li><a class="button--signup" href="includes/logout.inc.php">LOGOUT</a></li>';
+                            echo '</ul>';
+
+                        }
+                        else{
+                            echo '
+                            <ul>
+                                <li><a href="login.php">LOG IN</a></li>
+                                <li><a class="button--signup" href="signup.php">BECOME A MEMBER</a></li>
+                            </ul>';
+                        }
+                        ?>                        
                     </div>
 
                 </div>

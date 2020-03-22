@@ -1,13 +1,14 @@
 <?php
-    include "header.php";
+    require "header.php";
 ?>
 
 
 <main>  
-
-    
+    <?php
+    require "home.php"
+    ?>    
 </main>
 
 <?php
-    include "footer.php";
+    require "footer.php";
 ?>

@@ -40,9 +40,9 @@
                 </div>
 
                 <div class="footer--form-newsletter">
-                    <form class="newsletter--sub">
-                        <input type="email" placeholder="Email">
-                        <input type="submit" value="SUBSCRIBE">
+                    <form class="newsletter--sub" action="includes/newsletter.inc.php" method="post">
+                        <input type="email" placeholder="Email" name="email">
+                        <input type="submit" value="SUBSCRIBE" name="newsletter-submit">
                     </form>
                 </div>
             </div>
