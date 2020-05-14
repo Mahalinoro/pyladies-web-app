@@ -45,7 +45,7 @@
                                         echo "<td>".$row['dateOfBirth']."</td>";
                                         echo "<td>".$row['emailAddress']."</td>";
                                         echo "<td><a>Update</a></td>";
-                                        echo '<td><a href="admin.remove.user.inc.php?userID='.$userid.'">Remove</button></a>';
+                                        echo '<td><a href="includes/admin.remove.user.inc.php?userID='.$userid.'">Remove</button></a>';
                                         echo "<tr>";     
                                         
                                         $index ++;

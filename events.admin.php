@@ -49,7 +49,7 @@
                                         echo "<td>".$row['eventLocation']."</td>";
                                         echo '<td><a href="admin.event.view.php?eventID='.$eventid.'">View</button></a>';
                                         echo "<td><a>Update</a></td>";
-                                        echo '<td><a href="admin.remove.event.inc.php?eventID='.$eventid.'">Remove</button></a>';
+                                        echo '<td><a href="includes/admin.remove.event.inc.php?eventID='.$eventid.'">Remove</button></a>';
                                         echo "<td><a>View Attendees</a></td>";
                                         echo "<tr>";     
                                         

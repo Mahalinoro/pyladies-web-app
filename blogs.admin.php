@@ -44,7 +44,7 @@
                                         echo "<td>".$row['postDate']."</td>";
                                         echo '<td><a href="admin.blog.view.php?postID='.$postid.'">View</button></a>';
                                         echo "<td><a>Update</a></td>";
-                                        echo '<td><a href="admin.remove.post.inc.php?postID='.$postid.'">Remove</button></a>';
+                                        echo '<td><a href="includes/admin.remove.post.inc.php?postID='.$postid.'">Remove</button></a>';
                                         
                                         $index ++;
                                     }
