@@ -8,13 +8,13 @@
                             <h4>About</h4>
                         </li>
                         <li>
-                            <a href="#">Event</a>
+                            <a href="events.php">Event</a>
                         </li>
                         <li>
                             <a href="#">Resources</a>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="blogs.php">Blog</a>
                         </li>
                     </ul>
                 </div>

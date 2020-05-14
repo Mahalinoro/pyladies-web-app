@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['login-submit'])){
+if (isset($_POST['admin-login'])){
 
     require 'dbh.inc.php';
 
@@ -8,24 +8,24 @@ if (isset($_POST['login-submit'])){
 
 
     if (empty($userName) || empty($password)){
-        header("Location: ../login.php?error=emptyfields");
+        header("Location: ../adminlogin.php?error=emptyfields");
         exit();
     }
     else{
-        $sql = "SELECT * FROM users WHERE userName=? OR emailAddress=?";
+        $sql = "SELECT * FROM `admin` WHERE userName=?";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt,$sql)){
-            header("Location: ../login.php?error=sqlerror");
+            header("Location: ../adminlogin.php?error=sqlerror");
             exit();
         }
         else{
-            mysqli_stmt_bind_param($stmt, "ss", $userName,$userName);
+            mysqli_stmt_bind_param($stmt, "s", $userName);
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);
             if($row = mysqli_fetch_assoc($result)){
                 $pwdCheck = password_verify($password, $row['password']);
                 if($pwdCheck == false){
-                    header("Location: ../login.php?error=wrongpwd");
+                    header("Location: ../adminlogin.php?error=wrongpwd");
                     exit();
                 }
                 else if($pwdCheck == true){
@@ -33,15 +33,11 @@ if (isset($_POST['login-submit'])){
                     $_SESSION['userid'] = $row['userID'];
                     $_SESSION['username'] = $row['userName'];
 
-                    header("Location: ../index.php?login=sucess");
-                    exit();
-                }
-                else{
-                    header("Location: ../login.php?error=wrongpwd");
+                    header("Location: ../admindashboard.php?login=sucess");
                     exit();
                 }
             }else{
-                header("Location: ../login.php?error=invaliduser");
+                header("Location: ../adminlogin.php?error=invaliduser");
             }         
         }
     }
@@ -49,5 +45,4 @@ if (isset($_POST['login-submit'])){
 else{
     header("Location: ../index.php?");
 }
-
 ?>

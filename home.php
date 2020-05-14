@@ -84,16 +84,16 @@
         <div class="organizer--intro">
             <h1><span>< </span>OUR TEAM<span> /> </span></h1>
             <p><span># </span>We are passionate, love volunteering, and working as a team at all levels to make the workshops possible! </p>
-            <a href="#">BECOME AN ORGANIZER</a>
+            <a href="becomeanorganizer.php">BECOME AN ORGANIZER</a>
         </div>
 
         <div class="organizer-description--card-container">
             <div class="card--organizer">
-                <img class="card--organizer--img" src="assets/images/mahaly-avatar.png">
+                <img class="card--organizer--img" src="assets/images/profile.png">
                 <div class="card--organizer--container">
-                    <h4>Mahalinoro Razafimanjato</h4>
+                    <h4>Organizer #1</h4>
                     <h6>lead organizer</h6>
-                    <p>Computer Scientist Student at the African Leadership University. Python is one of her favorite programming language. She also loves video games especially MOBA on mobile, japanese pop culture and anime. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <ul>
                         <li>
                             <a href="# "><img src="assets/icons/facebook-color.png "></a>
@@ -109,11 +109,11 @@
             </div>
 
             <div class="card--organizer">
-                <img class="card--organizer--img" src="assets/images/hortense-avatar.png">
+                <img class="card--organizer--img" src="assets/images/profile.png">
                 <div class="card--organizer--container">
-                    <h4>Hortense Raharimalala</h4>
-                    <h6>lead organizer</h6>
-                    <p>Entomologist by profession. She loves nature and learning about the world of insects and bugs. Passionate about bioinformatics and new technologies, she wants to mix her profession and passion.</p>
+                    <h4>Organizer #2</h4>
+                    <h6>co-organizer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <ul>
                         <li>
                             <a href="# "><img src="assets/icons/facebook-color.png "></a>
@@ -129,11 +129,11 @@
             </div>
 
             <div class="card--organizer">
-                <img class="card--organizer--img" src="assets/images/fenomamy-avatar.png">
+                <img class="card--organizer--img" src="assets/images/profile.png">
                 <div class="card--organizer--container">
-                    <h4>Fenomamy Rakotomalala</h4>
+                    <h4>Organizer #3</h4>
                     <h6>co-organizer</h6>
-                    <p>Software developer in a company focusing on healthcare. She is on her way to become a great leader in her community. Internet and its infrastructure are one of her favorite discussion topics.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <ul>
                         <li>
                             <a href="# "><img src="assets/icons/facebook-color.png "></a>
@@ -149,11 +149,11 @@
             </div>
 
             <div class="card--organizer">
-                <img class="card--organizer--img" src="assets/images/yona-avatar.png">
+                <img class="card--organizer--img" src="assets/images/profile.png">
                 <div class="card--organizer--container">
-                    <h4>Yona Christelle Rasolonjatovo</h4>
+                    <h4>Organizer #4</h4>
                     <h6>co-organizer</h6>
-                    <p>Python developer at Blueline Madagascar. She is also a musician since her childhood. Creativity has been the center her of life. She loves everything about video games and artificial intelligence is her passion.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <ul>
                         <li>
                             <a href="# "><img src="assets/icons/facebook-color.png "></a>
@@ -252,8 +252,8 @@
                     <div class="blog--card">
                         <img class="blog--card--img" src="assets/images/machine-learning.png">
                         <div class="blog--card--container">
-                            <h4><a href="#">Title</a></h4>
-                            <p>Celebrating girls in STEM and especially in this day of Women's celebration, we kicked of this wonderful workshop where we<a href="#"> READ MORE...</a></p>
+                            <h4><a href="blogs.post.php?postID=3">Blog Sample Title 2</a></h4>
+                            <p>Celebrating girls in STEM and especially in this day of Women's celebration, we kicked of this wonderful workshop where we<a href="blogs.post.php?postID=3"> READ MORE...</a></p>
                             <ul>
                                 <li>
                                     <a href="# "><img src="assets/icons/comment.png"></a>
@@ -273,9 +273,9 @@
                     <div class="blog--card">
                         <img class="blog--card--img" src="assets/images/girl-code-week.jpg">
                         <div class="blog--card--container">
-                            <h4><a href="#">Title</a></h4>
+                            <h4><a href="blogs.post.php?postID=4">Blog Sample Title 3</a></h4>
                             <p>We just kicked off our very first edition of Africa Code Week. The participants were aged from 14 to 18 and it was very active.
-                                <a href="#">READ MORE...</a></p>
+                                <a href="blogs.post.php?postID=4">READ MORE...</a></p>
                             <ul>
                                 <li>
                                     <a href="# "><img src="assets/icons/comment.png"></a>
@@ -295,9 +295,9 @@
                     <div class="blog--card">
                         <img class="blog--card--img" src="assets/images/django-girls.png">
                         <div class="blog--card--container">
-                            <h4><a href="#">Title</a></h4>
+                            <h4><a href="blogs.post.php?postID=2">Blog Sample Title 1</a></h4>
                             <p>The third edition of the Django Girls Antananarivo workshop was over and it is finalized with some memorable group photos.
-                                <a href="#">READ MORE...</a></p>
+                                <a href="blogs.post.php?postID=2">READ MORE...</a></p>
                             <ul>
                                 <li>
                                     <a href="# "><img src="assets/icons/comment.png"></a>
@@ -317,9 +317,9 @@
                     <div class="blog--card">
                         <img class="blog--card--img" src="assets/images/img-six.png">
                         <div class="blog--card--container">
-                            <h4><a href="#">Title</a></h4>
+                            <h4><a href="blogs.post.php?postID=5">Blog Sample Title 4</a></h4>
                             <p>The third edition of the Django Girls Antananarivo workshop was over and it is finalized with some memorable group photos.
-                                <a href="#">READ MORE...</a></p>
+                                <a href="blogs.post.php?postID=5">READ MORE...</a></p>
                             <ul>
                                 <li>
                                     <a href="# "><img src="assets/icons/comment.png"></a>
@@ -338,6 +338,17 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+      /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+      (function(d, m){
+        var kommunicateSettings = {"appId":"2072ce0f10d71266e5b365099da5b9109","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+  </script>
     
 </main>
 

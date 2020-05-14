@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require "includes/dbh.inc.php";
 ?>
 
 <!DOCTYPE html>
@@ -37,10 +38,10 @@
 
                     <div class="header--navbar--items ">
                         <ul>
-                            <li><a href="# ">EVENTS</a></li>
-                            <li><a href="# ">RESOURCES</a></li>
-                            <li><a href="# ">SUPPORT US</a></li>
-                            <li><a href="# ">CODE OF CONDUCT</a></li>
+                            <li><a href="events.php">EVENTS</a></li>
+                            <li><a href="#">RESOURCES</a></li>
+                            <li><a href="supportus.php">SUPPORT US</a></li>
+                            <li><a href="codeofconduct.php">CODE OF CONDUCT</a></li>
 
                         </ul>
                     </div>
@@ -48,11 +49,14 @@
                     <div class="header--navbar--authentification ">
                         <?php
                         if(isset($_SESSION['userid'])){ 
-                            echo '<ul>';
-                            echo '<li><a href="#">'.$_SESSION['username'].'</a></li>';
-                            echo'<li><a class="button--signup" href="includes/logout.inc.php">LOGOUT</a></li>';
-                            echo '</ul>';
-
+                        
+                            $result = mysqli_query($conn, 'SELECT userName FROM users WHERE userID ='.$_SESSION['userid']);
+                            if(($row = mysqli_fetch_array($result))){
+                                echo '<ul>';
+                                echo '<li><a href="userdashboard.php">'.$row['userName'].'</a></li>';
+                                echo'<li><a class="button--signup" href="includes/logout.inc.php">LOGOUT</a></li>';
+                                echo '</ul>';                                
+                            }          
                         }
                         else{
                             echo '
@@ -84,10 +88,10 @@
                     <div class="header--content--button ">
                         <ul>
                             <li>
-                                <a class="button--content--event " href="# ">UPCOMING MEETUPS</a>
+                                <a class="button--content--event " href="events.php">UPCOMING MEETUPS</a>
                             </li>
                             <li>
-                                <a class="button--content--event " href=" # ">LATEST BLOG POSTS</a>
+                                <a class="button--content--event " href="blogs.php">LATEST BLOG POSTS</a>
                             </li>
                         </ul>
                     </div>
